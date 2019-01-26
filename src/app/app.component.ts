@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'custom-theme';
+  timeoutfunc: any;
+  color: '';
+  headingColor: '';
+
+
+  changeColor() {
+
+    document.querySelector('body').style.setProperty('--debbaColor', this.color);
+    document.querySelector('body').style.setProperty('--headerBackground', this.headingColor);
+
+  }
+
 }
